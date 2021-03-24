@@ -91,4 +91,5 @@ public abstract class AbstractProduct implements Product {
         this.type = name;
     }
 
+
 }
