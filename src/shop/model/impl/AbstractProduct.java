@@ -15,13 +15,13 @@ public abstract class AbstractProduct implements Product {
     private String type;
 
     public int getIN() {
-        return this.in;
+        return in;
     }
 
     public void setIN(int id) {
-        if (id == 0 || id > 0) {
-            this.in = id;
-        } else System.err.println("IN should be higher than 0 and cannot equal 0");
+        if (in == 0 & id > 0){
+            in = id;
+        }
     }
 
     public int getWidth() {
@@ -84,11 +84,11 @@ public abstract class AbstractProduct implements Product {
     }
 
     public String getType() {
-        return name;
+        return type;
     }
 
     public void setType(String name) {
-        this. name = name;
+        this.type = name;
     }
 
 }
